@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | happyhappyniuniu&#39;s blog</title>
+  <title>2025.2.9学习笔记 | happyhappyniuniu&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="happyhappyniuniu&#39;s blog">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="前三天才开始学习，今天是第三天，这三天也只是进行了算法入门。就是刷题的同时复习算法。（这里进行一个复习（展开可以看全部">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2025.2.9学习笔记">
+<meta property="og:url" content="http://example.com/2025/02/09/my-second-blog/index.html">
 <meta property="og:site_name" content="happyhappyniuniu&#39;s blog">
+<meta property="og:description" content="前三天才开始学习，今天是第三天，这三天也只是进行了算法入门。就是刷题的同时复习算法。（这里进行一个复习（展开可以看全部">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-02-09T15:22:48.000Z">
+<meta property="article:modified_time" content="2025-02-09T15:58:56.890Z">
 <meta property="article:author" content="niuruiyu">
 <meta name="twitter:card" content="summary">
   
@@ -122,135 +126,195 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-my-second-blog" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      2025.2.9学习笔记
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2025" class="archive-year">2025</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2025/02/09/my-second-blog/" class="archive-article-date">
+
+        
+        <a href="/2025/02/09/my-second-blog/" class="archive-article-date">
   	<time datetime="2025-02-09T15:22:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-09</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/02/09/my-second-blog/">2025.2.9学习笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
+        <p>前三天才开始学习，今天是第三天，这三天也只是进行了算法入门。<br>就是刷题的同时复习算法。（这里进行一个复习<br>（展开可以看全部</p>
+<span id="more"></span>
+<p>1.bst算法：对应的题目是走迷宫找最短的路程，bst有点像剥洋葱，但是一边剥里面一层一层还在生成。<br>2.动态规划里面的0-1背包，数字三角形；<br>动态规划的重点在于dp数组的构建and状态转移方程的构建<br>dp数组就直接看有几个限制条件，（像是背包是两个限制条件：容量和价格，三角形：行和列，所以这两个都是二维数组）<br>状态转移方程就是递推公式啦！<br>0-1背包：dp[i][j]&#x3D;max(dp[i-1][j],dp[i-1][j-weight[i]]+price[i]);就是拿不拿第i个物品<br>数字三角形:dp[i][j]&#x3D;value[i][j]+max(dp[i-1][j],dp[i-1][j-1]);<br>3.两种最短路径问题的算法<br>（1）floyed算法：（近似于动态规划，可以用于无向图<br>时间复杂度比较高，因为有三个for循环<br>步骤：初始化-&gt;算法-&gt;输出；<br>(2)dijkstra算法:(这个学了好久，自己推算还挺简单，但是写代码好麻烦TAT)<br>步骤：定义结构体-&gt;创建存储-&gt;算法<br>里面用的比较特殊的数据结构是优先队列priority_queue<br>用一个数组存储到达指定边的最短距离，用vector[],或者双重vector来存储边<br>具体代码明天还要再打一遍，这里就不写了<br>4.差分，这个简单，经常用于对数组元素连续多次改变<br>步骤：创建差分数组-&gt;初始化差分数组-&gt;区间端点修改-&gt;还原结果<br>5.计算一个数字的任意次方根<br>pow(n,1&#x2F;3):n的立方根<br>还有：sqrt(n),cbrt(n)<br>还有两种方法，这两种方法不单单可以求方根，还可以求方程的解<br>（1）牛顿迭代法<br>（2）二分法<br>两个都是不断缩小范围逼近真正地根，本质上都是求预测值<br>步骤也基本相同：设定精度-&gt;设定初始值-&gt;牛顿迭代法（公式），二分法（二分）-&gt;输出<br>6.并查集<br>这个也很简单：初始化（每个元素自己一个集合）-&gt;路径压缩（也就是find（parent））-&gt;合并（parent不同时，让parent相同）-&gt;操作输出</p>
+<p>上面只是简单写了一下思路，因为时间太晚了，今天也没学多少东西，但是经常联系真的很有效！！！！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/11/16/my-first-blog/" class="archive-article-date">
-  	<time datetime="2024-11-16T05:44:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-11-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/11/16/my-first-blog/">happyhappyniuniu&#39;s first blog!!!</a>
-    </h1>
-  
+      </div>
+    </span>
+  </div>
+</div>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">daily life</a>
-        		</li>
-      		
-		</ul>
-	</div>
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2025/02/09/my-second-blog/" alt="微信分享二维码">
+    </div>
+</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随笔//" class="article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/11/15/hello-world/" class="archive-article-date">
-  	<time datetime="2024-11-15T08:02:07.962Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-11-15</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2024/11/16/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">happyhappyniuniu&#39;s first blog!!!</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/11/15/hello-world/">Hello World</a>
-    </h1>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="my-second-blog" data-title="2025.2.9学习笔记" data-url="http://example.com/2025/02/09/my-second-blog/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://example.com/2025/02/09/my-second-blog/", 
+    sourceId: "my-second-blog",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
+  <div id="SOHUCS" sid="my-second-blog" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
   
 
-    
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'true'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+  
+
+  
 
 
           </div>
@@ -273,8 +337,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
